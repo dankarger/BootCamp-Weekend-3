@@ -1,17 +1,8 @@
-const maskify=(str)=>{
-    let result = '';
-    for(let i=0;i<str.length;i++){
-        if(i<str.length-4){
-            result+='#';
-        }else {
-            result += str[i];
-        }
-    }
-    return result;
+function findShortestWord(str) {
+    let arr=str.split(' ');
+    let shortestWord = arr[0].length;
+    arr.forEach(element=> element.length<shortestWord?shortestWord=element.length:shortestWord)
+    return shortestWord;
 }
 
-console.log(maskify('4556364607935616'));
-console.log(maskify('1'));
-console.log(maskify(''));
-console.log(maskify('Skippy'));
-console.log(maskify('anananananana Batman!'));
+console.log(findShortestWord('this is a test'))
