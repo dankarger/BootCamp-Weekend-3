@@ -1,8 +1,8 @@
 function findNextSquare(n) {
     //Checking if n is an integer, if not than return -1
-    if(Number.isInteger(Math.sqrt(n))){
+    if(Number.isInteger(Math.sqrt(n))) {
         //If n is an integer then for loop to check for te next perfect sqr
-        for(let i=n+1;i<n*n;i++){
+        for(let i=n+1;i<n*n;i++) {
              if(Number.isInteger(Math.sqrt(i))){
                  return i;
              }

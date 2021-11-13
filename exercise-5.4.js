@@ -3,7 +3,7 @@ const toWeirdCase=string =>{
     let result='';
     //Making the string into array divided into words
     let stringArray = string.split(' ');
-    //For each loop to iterate throught the words
+    //For each loop to iterate through the words
     stringArray.forEach(word=>{
         //For loop for each word to find out the even index and capitalize the letter
             for(let i=0;i<word.length;i++) {
