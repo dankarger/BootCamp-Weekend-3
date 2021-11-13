@@ -1,6 +1,5 @@
 function unique(arr) {
     //Making two variable to store the two options, starting with the first number of the arr as the first variable
-    //Each count has the first position to the number and second position for the number of time it appears.
     let count1 = [arr[0],1];
     let count2 = [0,0];
     //For loop that check if the numbers of the arr are the same as count1, if not than store it to count2
