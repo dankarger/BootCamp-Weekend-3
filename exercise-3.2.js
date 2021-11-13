@@ -1,5 +1,8 @@
 function peoplaeOnBus(arr) {
+    //Variable for How many people on the bus
     let people = 0;
+    //For each loop that calculate for each stop that calculate the people variable,
+    // how many people got on and off the bus
     arr.forEach(element=>{
         people-= element[0];
         people+= element[1];

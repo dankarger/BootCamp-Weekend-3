@@ -1,5 +1,5 @@
 function yesOrNo(boolean) {
-       if(boolean==true) {
+       if(boolean===true) {
            return 'Yes'
        }else {
            return 'No'

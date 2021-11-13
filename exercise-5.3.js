@@ -1,16 +1,16 @@
 const toCamelCase = (str) => {
     let result = '';
-    // if (str[0] === str[0].toUpperCase() && str[0] !== str[0].toLowerCase()) {
-    //     result += str.substr(0, 1);
-    // }
+    // For loop to iterate between the  characters of the string
     for(let i =0;i<str.length;i++){
+    //If the character is dash or lower dash then uppercase the next character
     if(str[i]==='-'||str[i]==='_'){
         result+=str[i+1].toUpperCase();
+        //Add one to the i variable to skip the character that was just uppercase
         i++;
     }else{
+        //If not dash or lower dash then add the character has is
         result+=str[i];
     }
-
     }
     return result;
 }
