@@ -1,13 +1,12 @@
 const maskify=(str)=>{
-    //Make a result variable
     let result = '';
     //For loop to find out if the letter is not one of the last 4 letter,
-    // and replace it with '#'
+    // and replace it with '#'.
     for(let i=0;i<str.length;i++){
         if(i<str.length-4){
             result+='#';
         }else {
-            //If the letter is one of the 4 last, then just add it to the result string
+            //If the letter is one of the 4 last, then add it to the result string.
             result += str[i];
         }
     }

@@ -11,7 +11,7 @@ function unique(arr) {
             count1[1]++;
         }
     }
-        //Check witch count variable has occured only once
+        //Check witch count variable has occurred only once
         return count1[1]===1?count1[0]:count2[0];
 }
 //Test

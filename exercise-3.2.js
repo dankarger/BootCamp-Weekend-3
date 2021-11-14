@@ -1,11 +1,11 @@
 function peoplaeOnBus(arr) {
-    //Variable for How many people on the bus
+    //Variable for how many people are on the bus
     let people = 0;
-    //For each loop that calculate for each stop that calculate the people variable,
-    // how many people got on and off the bus
+    //Foreach loop that calculate
+    // how many people got on and off the bus each stop
     arr.forEach(element=>{
-        people-= element[0];
-        people+= element[1];
+        people -= element[0];
+        people += element[1];
     })
     return people;
 }

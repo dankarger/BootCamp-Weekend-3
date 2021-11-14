@@ -1,4 +1,3 @@
-//First option of fibunaci
 function fibonaci(n,start) {
     //If starting point is 1
     if(start===1) {
@@ -8,7 +7,7 @@ function fibonaci(n,start) {
         if (n === 1 || n === 2) {
             return 1;
         }
-        //Calculating the numbers
+        //Calculating the numbers of the series
         for (let i = 2; i <= n; i++) {
             arr.push(arr[i - 2] + arr[i - 1]);
         }

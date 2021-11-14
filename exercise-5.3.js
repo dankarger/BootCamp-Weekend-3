@@ -8,7 +8,7 @@ const toCamelCase = (str) => {
         //Add one to the i variable to skip the character that was just uppercase
         i++;
     }else{
-        //If not dash or lower dash then add the character has is
+        //If not dash or lower dash then add the character to the result
         result+=str[i];
     }
     }
